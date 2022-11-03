@@ -12,6 +12,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0%;
+  flex-direction: row;
+  width: 100%;
+  height: 12vh;
+  background-color: cornflowerblue;
+  z-index: 1; }
 
 .App-header {
   background-color: #282c34;

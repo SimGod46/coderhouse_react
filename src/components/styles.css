@@ -1,0 +1,21 @@
+ul {
+    list-style: none; }
+.listaHeader {
+    display: grid;
+    place-items:  center;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    width: 75vw;
+    margin-top: 1%;}
+
+.listaHeader li a {
+    height: 5vh;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 100%;
+    font-size: large; }
+
+.listaHeader li a:hover {
+    color: black;
+    transition: 0.3s; }
