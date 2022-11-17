@@ -12,10 +12,18 @@ ul {
 .listaHeader li a {
     height: 5vh;
     text-decoration: none;
-    color: #ffffff;
     font-weight: 100%;
-    font-size: large; }
+    font-size: large;
+/*    color: #ffffff;*/ }
 
 .listaHeader li a:hover {
     color: black;
     transition: 0.3s; }
+
+.active{
+    color:aqua;
+}
+
+.inactive{
+    color:#ffffff;
+}

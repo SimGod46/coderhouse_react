@@ -1,15 +1,25 @@
 import './App.css';
+import {BrowserRouter,Routes, Route} from "react-router-dom";
 //Los componentes siempre empiezan con mayuscula!
 //import ClassComponent from './components/NavBar';
-import {ComponenteNavBar} from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
+import {ComponenteNavBar} from './components/NavBar/NavBar';
+import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
+import { Cart } from './pages/Cart/Cart';
 function App() {
   return (
     <div className="App">
-      <header className="navegacion">
-        <ComponenteNavBar/>
-      </header>
-      <ItemListContainer greeting="Bienvenido"/>
+      <BrowserRouter>
+        <header className="navegacion">
+          <ComponenteNavBar/>
+        </header>
+        <Routes>
+          <Route path="/" element={<ItemListContainer/>}/>
+          <Route path="/category/:id" element={<ItemListContainer/>}/>
+          <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+          <Route path="cart" element={Cart}></Route>
+        </Routes>
+    </BrowserRouter>
     </div>
   );
 }
