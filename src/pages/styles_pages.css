@@ -1,0 +1,23 @@
+.grillaItems{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    row-gap: 5%; 
+    place-items: center;
+    margin-top: 5vh;
+}
+
+.tarjetaDetallada{
+    width: 70vw;
+    margin: 3vh 1vw;
+    display: block;
+}
+
+.columna1{
+    width: 10vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.columna2{
+    width: 50vw;
+}

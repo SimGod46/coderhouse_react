@@ -1,15 +1,16 @@
 import  "../styles.css"
+import logo from './articLogo.png'
 import CartWidget from "../CartWidget/CartWidget"
 import { Link, NavLink } from "react-router-dom"
 export const ComponenteNavBar = (props) =>{
     return(
         <nav>
             <ul className="listaHeader">
-                <li><NavLink to="/"><h2>Artic Gather</h2></NavLink></li>
+                <li><NavLink to="/"><img src={logo} style={{height: "12vh"}}/></NavLink></li>
                 <li><NavLink to="/" className={({isActive})=> (isActive ? "active":"inactive")}>Home</NavLink></li>
                 <li><NavLink to="/category/Chaqueta" className={({isActive})=> (isActive ? "active":"inactive")}>Chaqueta</NavLink></li>
                 <li><NavLink to="/category/Pantalones" className={({isActive})=> (isActive ? "active":"inactive")}>Pantalones</NavLink></li>
-                <li><NavLink to="/category/Botas" className={({isActive})=> (isActive ? "active":"inactive")}>Botas</NavLink></li>
+                <li><NavLink to="/category/Guantes" className={({isActive})=> (isActive ? "active":"inactive")}>Guantes</NavLink></li>
                 <li><Link to="/cart"><CartWidget/></Link></li>
             </ul>
         </nav>

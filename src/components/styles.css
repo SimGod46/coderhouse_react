@@ -5,7 +5,7 @@ ul {
     place-items:  center;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 20px;
+    column-gap: 5vw;
     width: 75vw;
     margin-top: 1%;}
 
@@ -17,13 +17,28 @@ ul {
 /*    color: #ffffff;*/ }
 
 .listaHeader li a:hover {
-    color: black;
+    color: #D5D8DC;
     transition: 0.3s; }
 
 .active{
-    color:aqua;
+    color:white;
 }
 
 .inactive{
-    color:#ffffff;
+    color:#A1ADBE;
+}
+
+.tarjetaItem a{
+    text-decoration: none;
+}
+
+.tarjetaItem {
+    width: 30vw;
+    height: 50vh;
+}
+
+.tarjetaMiniatura{
+    width: 28vw;
+    height:70vh;
+    margin-top: 1vh;
 }
