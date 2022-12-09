@@ -42,3 +42,8 @@ ul {
     height:70vh;
     margin-top: 1vh;
 }
+.contadorItem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
