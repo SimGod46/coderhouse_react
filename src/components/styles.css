@@ -34,13 +34,12 @@ ul {
 
 .tarjetaItem {
     width: 30vw;
-    height: 50vh;
 }
 
 .tarjetaMiniatura{
-    width: 28vw;
-    height:70vh;
-    margin-top: 1vh;
+    width: 20vw;
+    height:40vh;
+    padding-top: 1vh;
 }
 .contadorItem{
     display: flex;

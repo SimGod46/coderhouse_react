@@ -1,13 +1,14 @@
 import './App.css';
 import {BrowserRouter,Routes, Route} from "react-router-dom";
-//Los componentes siempre empiezan con mayuscula!
-//import ClassComponent from './components/NavBar';
+import { useState } from 'react';
 import {ComponenteNavBar} from './components/NavBar/NavBar';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 import Cart from './pages/Cart/Cart';
 import CartProvider from './context/CartProvider';
+import LoadingComponent from './components/Loading/loading';
 function App() {
+  const [show,setShow]= useState(true);
   return (
     <CartProvider>
       <div className="App">      
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cart" element={<Cart/>}></Route>
         </Routes>
     </BrowserRouter>
+    
     </div>
     </CartProvider>
   );

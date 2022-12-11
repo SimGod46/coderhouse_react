@@ -38,6 +38,7 @@ const CartProvider = ({children}) => {
             return itemOnCart.id === id; 
           })){return true} else {false}
     }
+
     return(
         <cartContext.Provider value={{cart, addToCart, removeItem, clear}}>
             {children}
